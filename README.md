@@ -13,7 +13,8 @@ No momento, a classe foi testada nas impressoras:
 ## Abertura do servidor de impressão
 A impressora DARUMA usa sua biblioteca padrão de impressão, já a BEMATECH faz a impressão direta. Por isto, as configurações de abertura do servidor de impressão são diferentes. Veja:
 
-`*.ConfigurarImpressora("COM1"); // É passado por parâmetro OBRIGATÓRIO, a porta de impressão onde está instalada a impressora. `
+`BEMATECH.ConfigurarImpressora("COM1"); // É passado por parâmetro OBRIGATÓRIO, a porta de impressão onde está instalada a impressora. `
+`DARUMA.ConfigurarImpressora(); //Nenhum parâmetro é passado, pois a mesma busca automaticamente`
 
 ## Impressão de Texto
 Para ambas classes de impressão, são usadas as seguintes funções:

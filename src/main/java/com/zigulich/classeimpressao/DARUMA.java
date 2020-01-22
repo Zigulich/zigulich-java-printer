@@ -21,9 +21,9 @@ public class DARUMA {
         return Return;
     }
     
-    public static void ConfigurarImpressora(String PortaImpressao){
-        DUAL.regPortaComunicacao( PortaImpressao );
-//        DUAL.eBuscarPortaVelocidade();;
+    public static void ConfigurarImpressora(){
+//        DUAL.regPortaComunicacao( PortaImpressao );
+        DUAL.eBuscarPortaVelocidade();
     }
     
     public static void LinhaDupla( String Texto ){
