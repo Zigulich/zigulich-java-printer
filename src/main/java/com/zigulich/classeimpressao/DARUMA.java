@@ -42,6 +42,14 @@ public class DARUMA {
         DUAL.iImprimirTexto("<i>"+Texto+"</i>", 0);
     }
     
+    public static void LinhaCondensado(String Texto){
+        DUAL.iImprimirTexto("<c>"+Texto+"</c>", 0);
+    }
+    
+    public static void LinhaExpandido(String Texto){
+        DUAL.iImprimirTexto("<e>"+Texto+"</e>", 0);
+    }
+    
     public static void corteParcial(){
         DUAL.iImprimirTexto("<confgui>P</confgui>", 0);
         DUAL.iImprimirTexto("<gui></gui>", 0);

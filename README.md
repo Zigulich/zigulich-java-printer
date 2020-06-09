@@ -24,6 +24,8 @@ Para ambas classes de impressão, são usadas as seguintes funções:
 `*.LinhaNegrito(String Texto): Imprime em linha em negrito`
 `*.LinhaNormal(String Texto): Imprime texto sem formatação`
 `*.LinhaItalico(String Texto): Imprime texto em itálico`
+`*.LinhaCondensado(String Texto): Imprime texto consensado`
+`*.LinhaExpandido(String Texto): Imprime texto expandido com largura dupla`
 
 ## Controle da Guilhotina
 Em ambas impressoras, há dois tipos de corta na Guilhotina, o Parcial e o Total.

@@ -55,6 +55,16 @@ public class BEMATECH {
         BEMATECH.Impressora.print( "\n"+(char )27+(char)52+Texto+(char)27+( char)53);
     }
     
+    public static void LinhaCondensado(String Texto){
+        Texto = BEMATECH.subsTexto(Texto);
+        BEMATECH.Impressora.print( "\n"+(char )27+(char)15+Texto+(char)27+( char)80);
+    }
+    
+    public static void LinhaExpandido(String Texto){
+        Texto = BEMATECH.subsTexto(Texto);
+        BEMATECH.Impressora.print( "\n"+(char )27+(char)14+Texto+(char)27+( char)14);
+    }
+    
     public static void corteParcial(){
         BEMATECH.Impressora.print( ""+(char )27+(char)109); // aciona guilhotina 
     }
