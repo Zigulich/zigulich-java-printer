@@ -15,6 +15,11 @@ import javax.swing.JOptionPane;
  */
 public class DARUMA {
     
+    // Parâmetros genéricos da impressora
+    public static int CARACTERES_EXPANDIDO  = 24;
+    public static int CARACTERES_NORMAL     = 48; 
+    public static int CARACTERES_CONDENSADO = 57; 
+    
     public String subsTexto(String t){
         String Receive = Normalizer.normalize(t, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
         String Return  = Receive.toUpperCase();

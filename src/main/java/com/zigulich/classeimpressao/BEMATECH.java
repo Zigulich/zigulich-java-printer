@@ -17,6 +17,11 @@ import javax.swing.JOptionPane;
 public class BEMATECH {
     public static PrintWriter Impressora;
     
+    // Parâmetros genéricos da impressora
+    public static int CARACTERES_EXPANDIDO  = 24;
+    public static int CARACTERES_NORMAL     = 48; 
+    public static int CARACTERES_CONDENSADO = 64;
+    
     public static String subsTexto(String t){
         String Receive = Normalizer.normalize(t, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
         String Return  = Receive.toUpperCase();
